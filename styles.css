@@ -1,9 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
+}
+
+h2 a {
+  color: #fff;
 }
 
 .headerbar {
@@ -46,7 +46,7 @@ body {
   padding: 0;
   font-weight: bold;
   border: none;
-  height: 48px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,9 +72,15 @@ body {
 
 .dropdown-content a {
   color: grey;
-  padding: 12px 16px;
+  padding: 12px 20px;
   text-decoration: none;
   display: inline-block;
+}
+
+.tnwmainlogo {
+    width: 100%;
+    height: auto;
+    padding: 20px;
 }
 
 .nvaddbar a {
@@ -98,7 +104,7 @@ body {
 
 .dropdown:hover .dropbtn {
   color: white;
-  background-image: url("https://i.imgur.com/rwEdw6N.gif?noredirect");
+  background-image: url("https://media.tenor.com/images/aee9d1b2e5b2f81bd536e40bc10e7920/tenor.gif");
   background-size: cover;
   padding: 13px;
 }
@@ -126,12 +132,9 @@ body {
 }
 
 .nvaddbar {
-  height: 55px;
   width: 100%;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10px;
   background-color: gold;
 }
 
@@ -313,288 +316,7 @@ h2 {
   color: black;
 }
 
-.latest_news {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: repeat(minmax(150px, auto));
-  grid-gap: 10px;
-  margin-bottom: 50px;
-}
-
-.latest_news div {
-  width: 100%;
-}
-
-.latest_title {
-  color: #f42;
-  width: 100%;
-  font-family: Avalon, sans-serif;;
-  font-size: 39px;
-  font-weight: bold;
-  font-family: Avalon, sans-serif;
-  color: #f42;
-  padding-top: 0;
-  padding-bottom: 20px;
-}
-
-.latest_title:hover {
-  color: #000;
-  cursor: pointer;
-}
-.img_news {
-  width: 75px;
-  height: 75px;
-}
-
-.news1,
-.news2,
-.news3,
-.news4,
-.news5,
-.news6,
-.news7,
-.news8 {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.news1 h2,
-.news2 h2,
-.news3 h2,
-.news4 h2,
-.news5 h2,
-.news6 h2,
-.news7 h2,
-.news8 h2  {
-  margin: 0;
-  padding: 0;
-}
-
-.news1 h4,
-.news2 h4,
-.news3 h4,
-.news4 h4,
-.news5 h4,
-.news6 h4,
-.news7 h4,
-.news8 h4  {
-  padding: 0 0 0 10px;
-  margin: 0;
-  color: #000;
-}
-
-.details {
-  display: block;
-  padding-bottom: 0;
-}
-
-.latest_title {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-}
-
-.wrap_title {
-  position: relative;
-  width: 100%;
-}
-.details  ul {
-  list-style: none;
-  display: flex;
-  margin: 5px 0;
-  padding: 0 0 0 10px;
-}
-
-.details  ul li:first-child {
-  padding-right: 5px;
-}
-
-.details ul li:first-child::after {
-  content: "\B7";
-  display: block;
-  float: right;
-  margin: 0 0 0 5px;
-}
-
-.details  ul li {
-  padding: 0;
-  color: #aaa;
-}
-
-/* ---------Deals Section ----------*/
-
-.deals {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-}
-
-.deal1,
-.deal2,
-.deal3,
-.deal4,
-.deal5,
-.deal6,
-.deal7,
-.deal8 {
-  display: flex;
-  margin: 0 200px 0 30px;
-} 
-
-.deals img {
-  width: 75px;
-  height: 75px;
-  padding-bottom: 20px;
-}
-
-.deals h4 {
-  padding-left: 10px;
-  margin: 0;
-}
-
-.deal_details {
-  display: block;
-}
-
-.promo {
-  padding: 10px;
-}
-.deal_details span {
-  margin: 0;
-}
-
-.deals_x {
-  margin: 10px;
-}
-
-.latest_news .dealss {
-  width: 100%;
-  height: 201px;
-}
-
-.latest_news {
-  margin: auto;
-}
 @media screen and (min-width: 822px) {
-  .latest_news {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: repeat(minmax(230px, auto));
-    grid-gap: 30px;
-  }
-
-  .latest_title {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-  }
-
-  .news1 h4,
-  .news2 h4,
-  .news3 h4,
-  .news4 h4,
-  .news5 h4,
-  .news6 h4,
-  .news7 h4,
-  .news8 h4  {
-    padding: 5px 0 0 0;
-    margin: 0;
-    color: #000;
-  }
-
-  .news1 h4:hover,
-  .news2 h4:hover,
-  .news3 h4:hover,
-  .news4 h4:hover,
-  .news5 h4:hover,
-  .news6 h4:hover,
-  .news7 h4:hover,
-  .news8 h4:hover  {
-    color: #f42;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  .img_news {
-    display: block;
-    width: 100%;
-    height: 150px;
-  }
-
-  .news1,
-  .news2,
-  .news3,
-  .news4,
-  .news5,
-  .news6,
-  .news7,
-  .news8 {
-    display: block;
-  }
-
-  .news {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .details  ul {
-    list-style: none;
-    display: flex;
-    margin: 5px 0;
-    padding: 0;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(87, 86, 86, 0.2);
-    background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
-  }
-
-  /* -----------Tablet Deals section --------*/
-.deals {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-  .deal1,
-  .deal2,
-  .deal3,
-  .deal4,
-  .deal5,
-  .deal6,
-  .deal7,
-  .deal8 {
-    flex: 1;
-    padding: 12px;
-    max-width: 301px;
-  }
-
-  .deals img {
-    width: 287px;
-    height: 214px;
-    padding-bottom: 20px;
-  }
-
-  .deal1,
-  .deal2,
-  .deal3,
-  .deal4,
-  .deal5,
-  .deal6,
-  .deal7,
-  .deal8 {
-    display: block;
-    margin: 0;
-} 
   .centermenu {
     display: flex;
     height: 48px;
@@ -678,10 +400,6 @@ h2 {
     font-size: 13px;
     justify-content: space-between;
     width: 170px;
-  }
-
-  .nvaddbar {
-    height: 35px;
   }
 
   .news {
@@ -779,35 +497,14 @@ h2 {
     display: none;
     width: 66px;
   }
-  .deals {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 80%;
-  }
-
-  .dealss {
-    max-width: 270px;
-    max-height: 201px;
-  }
-
-  deals img {
-    width: 100px;
-  }
 
   #fundbox4 {
     display: flex;
   }
 
-  .latest_news {
-    max-width: 1252px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: repeat(minmax(230px, auto));
-    grid-gap: 30px;
-  }
-
   .fundtittle {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -821,14 +518,11 @@ div {
 }
 
 .highlights {
-  clear: both;
-  width: auto;
-  z-index: 0;
-  padding: 0;
-  flex-grow: 1;
-  height: 760px;
-  margin-top: 110px;
-  margin-bottom: 50px;
+  position: relative;
+  top: 100px;
+  width: 98%;
+  margin: auto;
+  margin-bottom: 350px;
 }
 
 .feature-logo {
@@ -838,14 +532,27 @@ div {
 
 .main-feature,
 .sub-feature {
-  height: 250px;
-  max-height: 500px;
+  height: 150px;
 }
 
 .main-feature h3,
 .sub-feature h3 {
   margin: 0;
-  padding: 5px 0;
+  padding: 0;
+}
+
+.menu-links a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.main-feature h3 a,
+.sub-feature h3 a {
+  color: #fff;
 }
 
 .sub-feature {
@@ -871,16 +578,19 @@ div {
 }
 
 .overlay {
-  top: 4%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(87, 86, 86, 0.2);
+  background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
 }
 
 .date {
   display: none;
-}
-
-.highlighicon {
-  width: 16px;
-  height: 16px;
 }
 
 .tnw-img {
@@ -890,25 +600,9 @@ div {
 
 .caption {
   position: absolute;
-  top: 150px;
+  bottom: 10px;
   left: 10px;
   color: #fff;
-}
-
-.caption2 {
-  position: absolute;
-  top: 150px;
-  left: 10px;
-  color: #fff;
-}
-
-.menu-links a {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
-  color: whitesmoke;
-  margin: 5px;
-  font-weight: 600;
 }
 
 .caption h3 a {
@@ -926,8 +620,13 @@ span {
   align-items: center;
   font-weight: bold;
   color: lightgrey;
-  gap: 20px;
-  margin: 4px;
+  gap: 10px;
+  margin: 4px 0;
+}
+
+.highlighicon {
+  width: 16px;
+  height: 16px;
 }
 
 @media screen and (min-width: 822px) {
@@ -935,35 +634,44 @@ span {
     margin: 0;
   }
 
-  .caption {
+  .overlay-main {
     position: absolute;
-    top: 4%;
-    left: 10px;
-    color: #fff;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(148, 33, 33, 0.1);
+    background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
   }
 
-  .caption2 {
+  .overlay {
     position: absolute;
-    top: 360px;
-    left: 10px;
-  }
-
-  .flex {
-    display: flex;
-    justify-content: center;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 86, 86, 0.2);
+    background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
   }
 
   .highlights {
-    margin-top: 120px;
-    height: 480px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    height: 300px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5px;
+    top: 100px;
   }
 
   .main-feature {
-    height: 480px;
-    max-height: 480px;
+    margin: 0;
+    padding: 0;
+    height: 250px;
   }
 
   .main-feature h3 {
@@ -973,19 +681,21 @@ span {
   }
 
   .sub-feature h3 {
-    position: relative;
-    top: 20px;
     font-size: 22px;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
   }
 
   .sub-feature {
-    gap: 5px;
+    display: flex;
     flex-direction: column;
+    gap: 5px;
     padding: 0;
-    height: 480px;
-    max-height: 480px;
+    height: 150px;
+  }
+
+  .sub-feature .tnw-card {
+    height: 122px;
   }
 
   .publication,
@@ -996,62 +706,48 @@ span {
     font-weight: bold;
     gap: 5px;
   }
-
-  .sub-feature a div {
-    height: 238px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
+  .highlights {
+    height: 400px;
+    margin-bottom: 150px;
+  }
+
+  .main-feature {
+    position: relative;
+    height: 405px;
+  }
+
   .feature-logo {
     position: absolute;
     z-index: 9;
-    top: 190px;
-    left: 20px;
+    top: 5px;
+    left: 10px;
     display: block;
-    font-size: 150px;
+    font-size: 120px;
     color: #fff;
     padding: 0;
     margin: 0;
-    line-height: 30px;
-  }
-
-  .latest_title {
-    display: grid;
-    max-width: 1252px;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
   }
 
   .date {
     display: block;
     position: absolute;
     z-index: 13;
-    top: 10px;
+    top: 20px;
     right: 20px;
     color: #fff;
     font-size: 18px;
     font-weight: 400;
   }
 
-  .sub-feature {
-    height: 480px;
+  .sub-feature .tnw-card {
+    height: 200px;
   }
 
   .sub-feature a div {
     height: 247px;
-  }
-
-  .highlights {
-    height: 500px;
-    max-height: 500px;
-  }
-
-  .main-feature {
-    height: 500px;
-    max-height: 500px;
   }
 
   .main-feature h3 {
@@ -1071,12 +767,6 @@ span {
 
   .overlay-main {
     background-image: linear-gradient(135deg, rgba(255, 0, 0, 0.9), rgba(148, 33, 33, 0.8), rgba(120, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
-  }
-
-  .caption2 {
-    position: absolute;
-    top: 60%;
-    padding: 0;
   }
 }
 
@@ -1195,7 +885,6 @@ span {
   font-family: tnw, 'Times New Roman', Times, serif;
   font-weight: bolder;
 }
-
 
 .categories {
   display: grid;
@@ -1564,4 +1253,319 @@ span {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 18px;
   }
+}
+
+.latest_news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: repeat(minmax(150px, auto));
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}
+
+.latest_news div {
+  width: 100%;
+}
+
+.latest_title {
+  color: #f42;
+  width: 100%;
+  font-family: Avalon, sans-serif;;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: Avalon, sans-serif;
+  color: #f42;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.latest_title:hover {
+  color: #000;
+  cursor: pointer;
+}
+.img_news {
+  width: 75px;
+  height: 75px;
+}
+
+.news1,
+.news2,
+.news3,
+.news4,
+.news5,
+.news6,
+.news7,
+.news8 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.news1 h2,
+.news2 h2,
+.news3 h2,
+.news4 h2,
+.news5 h2,
+.news6 h2,
+.news7 h2,
+.news8 h2  {
+  margin: 0;
+  padding: 0;
+}
+
+.news1 h4,
+.news2 h4,
+.news3 h4,
+.news4 h4,
+.news5 h4,
+.news6 h4,
+.news7 h4,
+.news8 h4  {
+  padding: 0 0 0 10px;
+  margin: 0;
+  color: #000;
+}
+
+.details {
+  display: block;
+  padding-bottom: 0;
+}
+
+.latest_title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-left: 10px;
+}
+
+.wrap_title {
+  margin: 10px;
+  position: relative;
+  width: 100%;
+}
+.details  ul {
+  list-style: none;
+  display: flex;
+  margin: 5px 0;
+  padding: 0 0 0 10px;
+}
+
+.details  ul li:first-child {
+  padding-right: 5px;
+}
+
+.details ul li:first-child::after {
+  content: "\B7";
+  display: block;
+  float: right;
+  margin: 0 0 0 5px;
+}
+
+.details  ul li {
+  padding: 0;
+  color: #aaa;
+}
+
+/* ---------Deals Section ----------*/
+
+.deals {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.deal1,
+.deal2,
+.deal3,
+.deal4,
+.deal5,
+.deal6,
+.deal7,
+.deal8 {
+  display: flex;
+  margin: 0 200px 0 30px;
+} 
+
+.deals img {
+  width: 75px;
+  height: 75px;
+  padding-bottom: 20px;
+}
+
+.deals h4 {
+  padding-left: 10px;
+  margin: 0;
+}
+
+.deal_details {
+  display: block;
+}
+
+.promo {
+  padding: 10px;
+}
+.deal_details span {
+  margin: 0;
+}
+
+.deals_t{
+  margin: 10px;
+}
+
+@media screen and (min-width: 822px) {
+    .latest_news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(minmax(230px, auto));
+    grid-gap: 30px;
+  }
+
+  .latest_title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .news1 h4,
+  .news2 h4,
+  .news3 h4,
+  .news4 h4,
+  .news5 h4,
+  .news6 h4,
+  .news7 h4,
+  .news8 h4  {
+    padding: 5px 0 0 0;
+    margin: 0;
+    color: #000;
+  }
+
+  .news1 h4:hover,
+  .news2 h4:hover,
+  .news3 h4:hover,
+  .news4 h4:hover,
+  .news5 h4:hover,
+  .news6 h4:hover,
+  .news7 h4:hover,
+  .news8 h4:hover  {
+    color: #f42;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .img_news {
+    display: block;
+    width: 100%;
+    height: 150px;
+    
+  }
+
+  .news1,
+  .news2,
+  .news3,
+  .news4,
+  .news5,
+  .news6,
+  .news7,
+  .news8 {
+    display: block;
+  }
+
+  .news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .details  ul {
+    list-style: none;
+    display: flex;
+    margin: 5px 0;
+    padding: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 86, 86, 0.2);
+    background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
+  }
+
+  /* -----------Tablet Deals section --------*/
+.deals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+  .deal1,
+  .deal2,
+  .deal3,
+  .deal4,
+  .deal5,
+  .deal6,
+  .deal7,
+  .deal8 {
+    flex: 1;
+    padding: 12px;
+    max-width: 301px;
+  }
+
+  .deals img {
+    width: 287px;
+    height: 214px;
+    padding-bottom: 20px;
+  }
+
+  .deal1,
+  .deal2,
+  .deal3,
+  .deal4,
+  .deal5,
+  .deal6,
+  .deal7,
+  .deal8 {
+    display: block;
+    margin: 0;
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+    .latest_news {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: repeat(minmax(230px, auto));
+        grid-gap: 30px;
+      }
+    
+      .latest_news {
+        max-width: 1252px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: repeat(minmax(230px, auto));
+        grid-gap: 30px;
+      }
+    
+      .fundtittle {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    
+      .deals {
+        flex-direction: row;
+        max-width: 1252px;
+        flex-wrap: wrap;
+      }
 }

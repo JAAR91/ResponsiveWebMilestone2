@@ -308,6 +308,7 @@ h2 {
 #afundtittle:hover {
   color: black;
 }
+
 .latest_news {
   display: grid;
   grid-template-columns: 1fr;
@@ -326,7 +327,6 @@ h2 {
 .latest_title {
   color: #f42;
   width: 100%;
-  margin-left: 10px;
   font-family: Avalon, sans-serif;;
   font-size: 39px;
   font-weight: bold;
@@ -387,9 +387,10 @@ h2 {
   display: block;
   padding-bottom: 0;
 }
+
 .latest_title {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
 
@@ -421,8 +422,49 @@ h2 {
   color: #aaa;
 }
 
+/* ---------Deals Section ----------*/
+
+.deals {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.deal1,
+.deal2,
+.deal3,
+.deal4,
+.deal5,
+.deal6,
+.deal7,
+.deal8 {
+  display: flex;
+  margin: 0 200px 0 30px;
+} 
+
+.deals img {
+  width: 75px;
+  height: 75px;
+  padding-bottom: 20px;
+}
+
+.deals h4 {
+  padding-left: 10px;
+  margin: 0;
+}
+
+.deal_details {
+  display: block;
+}
+
+.promo {
+  padding: 10px;
+}
+.deal_details span {
+  margin: 0;
+}
 @media screen and (min-width: 822px) {
-  
   .latest_news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -430,35 +472,37 @@ h2 {
     padding: 10px;
     grid-gap: 30px;
   }
+
   .latest_title {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
 
   .news1 h4,
-.news2 h4,
-.news3 h4,
-.news4 h4,
-.news5 h4,
-.news6 h4,
-.news7 h4,
-.news8 h4  {
-  padding: 5px 0 0 0;
-  margin: 0;
-  color: #000;
-}
-.news1 h4:hover,
-.news2 h4:hover,
-.news3 h4:hover,
-.news4 h4:hover,
-.news5 h4:hover,
-.news6 h4:hover,
-.news7 h4:hover,
-.news8 h4:hover  {
-  color: #f42;
-  text-decoration: underline;
-  cursor: pointer;
+  .news2 h4,
+  .news3 h4,
+  .news4 h4,
+  .news5 h4,
+  .news6 h4,
+  .news7 h4,
+  .news8 h4  {
+    padding: 5px 0 0 0;
+    margin: 0;
+    color: #000;
+  }
+
+  .news1 h4:hover,
+  .news2 h4:hover,
+  .news3 h4:hover,
+  .news4 h4:hover,
+  .news5 h4:hover,
+  .news6 h4:hover,
+  .news7 h4:hover,
+  .news8 h4:hover  {
+    color: #f42;
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   .img_news {
@@ -505,7 +549,43 @@ h2 {
     background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
   }
 
-  
+  /* -----------Tablet Deals section --------*/
+  .deals {
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .deal1,
+  .deal2,
+  .deal3,
+  .deal4,
+  .deal5,
+  .deal6,
+  .deal7,
+  .deal8 {
+    flex: 1;
+    padding: 12px;
+    max-width: 301px;
+  }
+
+  .deals img {
+    width: 287px;
+    height: 214px;
+    padding-bottom: 20px;
+  }
+
+  .deal1,
+  .deal2,
+  .deal3,
+  .deal4,
+  .deal5,
+  .deal6,
+  .deal7,
+  .deal8 {
+    display: block;
+    margin: 0;
+} 
   .centermenu {
     display: flex;
     height: 48px;
@@ -716,8 +796,14 @@ h2 {
 
   .fundtittle {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
+}
+
+.deals {
+  flex-direction: row;
+  max-width: 1252px;
+  flex-wrap: wrap;
 }
 
 @font-face {
@@ -924,14 +1010,16 @@ span {
     margin: 0;
     line-height: 30px;
   }
+
   .latest_title {
     display: grid;
     max-width: 1252px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
+
   .date {
     display: block;
     position: absolute;
@@ -1197,7 +1285,7 @@ span {
 }
 
 .catlinklist li a {
-  color:#555;
+  color: #555;
   font-family: ARS Maquette, Helvetica, Neue, Arial, sans-serif;
   font-size: 14px;
 }

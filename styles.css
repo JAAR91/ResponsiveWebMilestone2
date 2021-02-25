@@ -1016,20 +1016,6 @@ span {
     line-height: 30px;
   }
 
-  .deal_i {
-    width: 100%;
-    height: 200px;
-  }
-
-  .deals_t {
-    margin-top: 30px;
-  }
-
-  .deal_detail {
-    padding-top: 4px;
-    max-width: 245px;
-  }
-
   .latest_title {
     display: grid;
     max-width: 1252px;

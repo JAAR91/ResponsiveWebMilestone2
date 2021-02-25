@@ -40,6 +40,12 @@ Every single part of the project was done so it's responsive to different size s
 - Twitter: [@FrancisUloko](https://twitter.com/FrancisUloko)
 - LinkedIn: [FrancisUloko](https://linkedin.com/in/FrancisUloko)
 
+👤 **ANVI ALEX EPONON**
+
+- GitHub: [@Anvi98](https://github.com/Anvi98)
+- Twitter: [@anvi_al](https://twitter.com/anvi_al)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anvi-alex-eponon/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

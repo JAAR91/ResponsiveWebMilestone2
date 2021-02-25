@@ -24,7 +24,7 @@ Every single part of the project was done so it's responsive to different size s
 
 ## Live Demo
 
-[Live Demo Link](https://francisuloko.github.io/responsive-design-tnw/)
+[Live Demo Link](https://jaarkira.github.io/ResponsiveWebMilestone2/)
 
 ## Authors
 

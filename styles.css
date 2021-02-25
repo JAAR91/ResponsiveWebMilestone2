@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -316,9 +320,6 @@ h2 {
   grid-gap: 10px;
   margin-bottom: 50px;
 }
-.wrap_news {
-  position: relative;
-}
 
 .latest_news div {
   width: 100%;
@@ -392,6 +393,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
+  margin-left: 10px;
 }
 
 .wrap_title {
@@ -425,10 +427,12 @@ h2 {
 /* ---------Deals Section ----------*/
 
 .deals {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .deal1,
@@ -464,12 +468,15 @@ h2 {
 .deal_details span {
   margin: 0;
 }
+
+.deals_t{
+  margin: 10px;
+}
 @media screen and (min-width: 822px) {
   .latest_news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: repeat(minmax(230px, auto));
-    padding: 10px;
     grid-gap: 30px;
   }
 
@@ -550,12 +557,14 @@ h2 {
   }
 
   /* -----------Tablet Deals section --------*/
-  .deals {
-    flex-direction: row;
-    max-width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+.deals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
   .deal1,
   .deal2,
   .deal3,
@@ -770,6 +779,14 @@ h2 {
     display: none;
     width: 66px;
   }
+  .deals {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+  }
+
+  deals img {
+    width: 100px;
+  }
 
   #fundbox4 {
     display: flex;
@@ -779,7 +796,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: repeat(minmax(230px, auto));
-    padding: 10px;
     grid-gap: 30px;
   }
 
@@ -790,7 +806,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: repeat(minmax(230px, auto));
-    padding: 10px;
     grid-gap: 30px;
   }
 
@@ -798,13 +813,15 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
   }
+
+  .deals {
+    flex-direction: row;
+    max-width: 1252px;
+    flex-wrap: wrap;
+  }
 }
 
-.deals {
-  flex-direction: row;
-  max-width: 1252px;
-  flex-wrap: wrap;
-}
+
 
 @font-face {
   font-family: tnw;
@@ -1009,6 +1026,20 @@ span {
     padding: 0;
     margin: 0;
     line-height: 30px;
+  }
+
+  .deal_i {
+    width: 100%;
+    height: 200px;
+  }
+
+  .deals_t {
+    margin-top: 30px;
+  }
+
+  .deal_detail {
+    padding-top: 4px;
+    max-width: 245px;
   }
 
   .latest_title {

@@ -393,11 +393,9 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-  margin-left: 10px;
 }
 
 .wrap_title {
-  margin: 10px;
   position: relative;
   width: 100%;
 }
@@ -430,9 +428,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  max-width: 80%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .deal1,
@@ -469,8 +464,17 @@ h2 {
   margin: 0;
 }
 
-.deals_t{
+.deals_x {
   margin: 10px;
+}
+
+.latest_news .dealss {
+  width: 100%;
+  height: 201px;
+}
+
+.latest_news {
+  margin: auto;
 }
 @media screen and (min-width: 822px) {
   .latest_news {
@@ -516,7 +520,6 @@ h2 {
     display: block;
     width: 100%;
     height: 150px;
-    
   }
 
   .news1,
@@ -561,9 +564,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
-  max-width: 80%;
-  margin-right: auto;
-  margin-left: auto;
 }
   .deal1,
   .deal2,
@@ -784,6 +784,11 @@ h2 {
     width: 80%;
   }
 
+  .dealss {
+    max-width: 270px;
+    max-height: 201px;
+  }
+
   deals img {
     width: 100px;
   }
@@ -793,16 +798,7 @@ h2 {
   }
 
   .latest_news {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: repeat(minmax(230px, auto));
-    grid-gap: 30px;
-  }
-
-  .latest_news {
     max-width: 1252px;
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: repeat(minmax(230px, auto));
@@ -813,15 +809,7 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
   }
-
-  .deals {
-    flex-direction: row;
-    max-width: 1252px;
-    flex-wrap: wrap;
-  }
 }
-
-
 
 @font-face {
   font-family: tnw;

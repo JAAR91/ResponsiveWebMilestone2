@@ -653,11 +653,6 @@ span {
   height: 16px;
 }
 
-.deals_x {
-  max-width: 1252px;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 822px) {
   div {
     margin: 0;
@@ -741,6 +736,11 @@ span {
   .highlights {
     height: 400px;
     margin-bottom: 150px;
+  }
+
+  .deals_x {
+    max-width: 1252px;
+    margin: 0 auto;
   }
 
   .main-feature {
@@ -1275,7 +1275,7 @@ span {
   height: 75px;
 }
 
-.news {
+.news_deal {
   display: flex;
   margin: 0;
   padding: 0;
@@ -1391,7 +1391,7 @@ span {
     height: 150px;
   }
 
-  .news {
+  .news_deal {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1433,10 +1433,9 @@ span {
     padding-bottom: 20px;
   }
 
-  .news {
+  .news_deal {
     display: block;
     margin: 0;
-    padding: 12px;
     max-width: 301px;
   }
 }

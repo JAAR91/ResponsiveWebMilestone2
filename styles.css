@@ -1337,18 +1337,6 @@ span {
   margin-left: auto;
 }
 
-.deal1,
-.deal2,
-.deal3,
-.deal4,
-.deal5,
-.deal6,
-.deal7,
-.deal8 {
-  display: flex;
-  margin: 0 200px 0 30px;
-}
-
 .deals h4 {
   padding-left: 10px;
   margin: 0;
@@ -1384,27 +1372,14 @@ span {
     grid-gap: 30px;
   }
 
-  .news1 h4,
-  .news2 h4,
-  .news3 h4,
-  .news4 h4,
-  .news5 h4,
-  .news6 h4,
-  .news7 h4,
-  .news8 h4 {
+  .details h4 {
     padding: 5px 0 0 0;
     margin: 0;
     color: #000;
+    text-align: left;
   }
 
-  .news1 h4:hover,
-  .news2 h4:hover,
-  .news3 h4:hover,
-  .news4 h4:hover,
-  .news5 h4:hover,
-  .news6 h4:hover,
-  .news7 h4:hover,
-  .news8 h4:hover {
+  .details h4:hover {
     color: #f42;
     text-decoration: underline;
     cursor: pointer;
@@ -1414,17 +1389,6 @@ span {
     display: block;
     width: 100%;
     height: 150px;
-  }
-
-  .news1,
-  .news2,
-  .news3,
-  .news4,
-  .news5,
-  .news6,
-  .news7,
-  .news8 {
-    display: block;
   }
 
   .news {
@@ -1469,14 +1433,7 @@ span {
     padding-bottom: 20px;
   }
 
-  .deal1,
-  .deal2,
-  .deal3,
-  .deal4,
-  .deal5,
-  .deal6,
-  .deal7,
-  .deal8 {
+  .news {
     display: block;
     margin: 0;
     padding: 12px;

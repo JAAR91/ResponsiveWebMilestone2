@@ -1392,10 +1392,9 @@ span {
   }
 
   .news_deal {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    display: block;
+    margin: 0;
+    max-width: 301px;
   }
 
   .details ul {
@@ -1431,12 +1430,6 @@ span {
     width: 287px;
     height: 214px;
     padding-bottom: 20px;
-  }
-
-  .news_deal {
-    display: block;
-    margin: 0;
-    max-width: 301px;
   }
 }
 

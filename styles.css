@@ -91,15 +91,10 @@ body {
   color: white;
 }
 
-.social-icons a {
-  position: relative;
-  top: 2px;
-  left: 2px;
-}
-
 .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
+  transition: all 2s;
 }
 
 .dropdown:hover .dropbtn {
@@ -107,6 +102,7 @@ body {
   background-image: url("https://media.tenor.com/images/aee9d1b2e5b2f81bd536e40bc10e7920/tenor.gif");
   background-size: cover;
   padding: 13px;
+  transition: all 2s;
 }
 
 .centermenu {
@@ -164,7 +160,18 @@ li {
   z-index: 0;
   background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
+  flex-direction: column;RWDproject
+  accessibility
+  funding
+  header
+  highlight/0.2
+  highlightupdate
+  main
+  remotes/origin/RWDproject
+  remotes/origin/accessibility
+  remotes/origin/footer
+  remotes/origin/funding
+  remotes/origin/highlight/0.2
   justify-content: center;
   max-width: 1252px;
   margin-left: auto;
@@ -808,8 +815,18 @@ span {
   background-color: #000;
 }
 
-.social-icons li {
-  margin: 10px;
+.socialicons {
+  width: 35px;
+  height: 35px;
+  margin:0 10px 0 10px;
+  border-radius: 50%;
+  background-color: #555;
+  border: 2px solid #555;
+}
+
+.socialicons img {
+  position: relative;
+  top: 25%;  
 }
 
 .catlinklist li {
@@ -834,14 +851,9 @@ span {
   align-items: center;
 }
 
-.social-icons {
-  padding: 5px;
-  margin: 5px auto;
-  background-color: #131313;
-}
-
 .icon-nav {
   padding: 5px;
+  height: 45px;
 }
 
 .footer-menu {
@@ -856,19 +868,16 @@ span {
   padding-bottom: 20px;
 }
 
-.social-icons li svg,
-.social-icons li img {
-  width: 16px;
-  height: 16px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #555;
-  border: 2px solid #555;
+.social-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0
 }
 
-.social-icons li svg:hover,
-.social-icons li img:hover {
+.socialicons:hover {
   background-color: black;
+  transition: all 1s;
 }
 
 .menu-links a:hover {
@@ -891,28 +900,22 @@ span {
     padding: 10px;
   }
 
-  .social-icons li svg,
-  .social-icons li img {
-    width: 12px;
-    height: 12px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #555;
-    border: 2px solid #555;
-  }
-
-  .social-icons li svg:hover,
-  .social-icons li img:hover {
-    background-color: black;
-  }
-
   .footer-menu,
   .copyright {
     margin: 0;
   }
 }
 
+@keyframes test {
+  0% {box-shadow: 0 10px 20px rgb(117, 237, 241); border-bottom: 1px solid rgb(117, 237, 241);}
+  25% {box-shadow: 10px 0px 20px rgb(117, 237, 241);border-right: 1px solid rgb(117, 237, 241);}
+  50% {box-shadow: 0 -10px 20px rgb(117, 237, 241);border-top: 1px solid rgb(117, 237, 241);}
+  75% {box-shadow: -10px 0px 20px rgb(117, 237, 241);border-left: 1px solid rgb(117, 237, 241);}
+  100% {box-shadow: 0 10px 20px rgb(117, 237, 241);border-bottom: 1px solid rgb(117, 237, 241);}
+}
+
 .access .happy-man {
+  border: 1px solid rgb(9, 5, 255) ;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -922,6 +925,10 @@ span {
   background-color: rgb(9, 5, 255);
   padding: 10px;
   z-index: 20;
+  animation-name: test;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .tnw-copyright {

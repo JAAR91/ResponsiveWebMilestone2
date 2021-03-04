@@ -612,6 +612,12 @@ div {
   background-image: linear-gradient(rgba(155, 148, 148, 0.2), rgba(0, 0, 0, 1));
 }
 
+.overlay-main:hover {
+  animation-name: innershadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -622,6 +628,12 @@ div {
   height: 100%;
   background: rgba(87, 86, 86, 0.2);
   background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
+}
+
+.overlay:hover {
+  animation-name: innershadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .date {
@@ -907,11 +919,17 @@ span {
 }
 
 @keyframes test {
-  0% {box-shadow: 0 10px 20px rgb(117, 237, 241); border-bottom: 1px solid rgb(117, 237, 241);}
-  25% {box-shadow: 10px 0px 20px rgb(117, 237, 241);border-right: 1px solid rgb(117, 237, 241);}
-  50% {box-shadow: 0 -10px 20px rgb(117, 237, 241);border-top: 1px solid rgb(117, 237, 241);}
-  75% {box-shadow: -10px 0px 20px rgb(117, 237, 241);border-left: 1px solid rgb(117, 237, 241);}
-  100% {box-shadow: 0 10px 20px rgb(117, 237, 241);border-bottom: 1px solid rgb(117, 237, 241);}
+  0% {box-shadow: 0 10px 10px 10px rgb(181, 104, 211); border-bottom: 1px solid rgb(117, 237, 241);}
+  25% {box-shadow: 10px 0px 10px 10px rgb(181, 104, 211);border-right: 1px solid rgb(117, 237, 241);}
+  50% {box-shadow: 0 -10px 10px 10px rgb(181, 104, 211);border-top: 1px solid rgb(117, 237, 241);}
+  75% {box-shadow: -10px 0px 10px 10px rgb(181, 104, 211);border-left: 1px solid rgb(117, 237, 241);}
+  100% {box-shadow: 0 10px 10px 10px rgb(181, 104, 211);border-bottom: 1px solid rgb(117, 237, 241);}
+}
+
+@keyframes innershadow {
+  0% {box-shadow: inset 0 0 20px black;}
+  50% {box-shadow: inset 0 0 60px black;}
+  100% {box-shadow: inset 0 0 20px black;}
 }
 
 .access .happy-man {

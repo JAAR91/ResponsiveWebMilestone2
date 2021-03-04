@@ -160,18 +160,7 @@ li {
   z-index: 0;
   background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;RWDproject
-  accessibility
-  funding
-  header
-  highlight/0.2
-  highlightupdate
-  main
-  remotes/origin/RWDproject
-  remotes/origin/accessibility
-  remotes/origin/footer
-  remotes/origin/funding
-  remotes/origin/highlight/0.2
+  flex-direction: column;
   justify-content: center;
   max-width: 1252px;
   margin-left: auto;
@@ -830,7 +819,7 @@ span {
 .socialicons {
   width: 35px;
   height: 35px;
-  margin:0 10px 0 10px;
+  margin: 0 10px 0 10px;
   border-radius: 50%;
   background-color: #555;
   border: 2px solid #555;
@@ -838,7 +827,7 @@ span {
 
 .socialicons img {
   position: relative;
-  top: 25%;  
+  top: 25%;
 }
 
 .catlinklist li {
@@ -884,7 +873,7 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  padding: 0
+  padding: 0;
 }
 
 .socialicons:hover {
@@ -919,21 +908,48 @@ span {
 }
 
 @keyframes test {
-  0% {box-shadow: 0 10px 10px 10px rgb(181, 104, 211); border-bottom: 1px solid rgb(117, 237, 241);}
-  25% {box-shadow: 10px 0px 10px 10px rgb(181, 104, 211);border-right: 1px solid rgb(117, 237, 241);}
-  50% {box-shadow: 0 -10px 10px 10px rgb(181, 104, 211);border-top: 1px solid rgb(117, 237, 241);}
-  75% {box-shadow: -10px 0px 10px 10px rgb(181, 104, 211);border-left: 1px solid rgb(117, 237, 241);}
-  100% {box-shadow: 0 10px 10px 10px rgb(181, 104, 211);border-bottom: 1px solid rgb(117, 237, 241);}
+  0% {
+    box-shadow: 0 10px 10px 10px rgb(181, 104, 211);
+    border-bottom: 1px solid rgb(117, 237, 241);
+  }
+
+  25% {
+    box-shadow: 10px 0 10px 10px rgb(181, 104, 211);
+    border-right: 1px solid rgb(117, 237, 241);
+  }
+
+  50% {
+    box-shadow: 0 -10px 10px 10px rgb(181, 104, 211);
+    border-top: 1px solid rgb(117, 237, 241);
+  }
+
+  75% {
+    box-shadow: -10px 0 10px 10px rgb(181, 104, 211);
+    border-left: 1px solid rgb(117, 237, 241);
+  }
+
+  100% {
+    box-shadow: 0 10px 10px 10px rgb(181, 104, 211);
+    border-bottom: 1px solid rgb(117, 237, 241);
+  }
 }
 
 @keyframes innershadow {
-  0% {box-shadow: inset 0 0 20px black;}
-  50% {box-shadow: inset 0 0 60px black;}
-  100% {box-shadow: inset 0 0 20px black;}
+  0% {
+    box-shadow: inset 0 0 20px black;
+  }
+
+  50% {
+    box-shadow: inset 0 0 60px black;
+  }
+
+  100% {
+    box-shadow: inset 0 0 20px black;
+  }
 }
 
 .access .happy-man {
-  border: 1px solid rgb(9, 5, 255) ;
+  border: 1px solid rgb(9, 5, 255);
   position: fixed;
   bottom: 20px;
   right: 20px;
